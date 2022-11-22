@@ -15,7 +15,6 @@ h1 {
 }
 
 .snow-container {
-  margin-inline: 2rem;
   display: flex;
   gap: 10rem;
 
@@ -24,52 +23,83 @@ h1 {
   z-index: -1;
 }
 
-.snowflake {
-  width: fit-content;
-  font-size: 2rem;
-
-  animation: fall 5000ms 0ms infinite linear;
+.container-1 {
+  margin-inline: 1rem;
 }
 
-@keyframes fall {
+.container-2 {
+  margin-inline: 5rem;
+  top: -400px;
+}
+
+.snowflake {
+  width: fit-content;
+}
+
+.fall-slant {
+  animation: fall-1 5000ms 0ms infinite linear;
+}
+
+@keyframes fall-1 {
   0% {
-    transform: translateY(0vh);
+    transform: translateY(0vh) translateX(-15vw);
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(200vh) translateX(50vw);
+  }
+}
+
+.fall-down {
+  animation: fall-2 5000ms 0ms infinite linear;
+}
+
+@keyframes fall-2 {
+  0% {
+    transform: translateY(0vh) translateX(-10vw);
+  }
+  100% {
+    transform: translateY(200vh) translateX(30vw);
   }
 }
 
 .snow-1 {
+  font-size: 2rem;
   animation-delay: 500ms;
   animation-duration: 4000ms;
 }
 
 .snow-2 {
+  font-size: 1.5rem;
   animation-delay: 3500ms;
   animation-duration: 7000ms;
 }
 
 .snow-3 {
+  font-size: 2.25rem;
   animation-delay: 0ms;
   animation-duration: 4500ms;
 }
 
 .snow-4 {
+  font-size: 1.25rem;
   animation-delay: 1500ms;
   animation-duration: 6000ms;
 }
 
 .snow-5 {
+  font-size: 1.75rem;
   animation-delay: 2500ms;
   animation-duration: 4000ms;
 }
 
 .snow-6 {
+  font-size: 1.5rem;
   animation-delay: 1000ms;
   animation-duration: 5500ms;
 }
 
 .snow-7 {
+  font-size: 2rem;
   animation-delay: 3000ms;
+  animation-duration: 4500ms;
 }
